@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Superchat画像生成機</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="render">
+        <render v-bind:price="price" v-bind:message="message"></render>
+        <p>&yen;<input type="number" min="100" max="50000" v-model.number="price"></p>
+        <p><textarea maxlength="200" placeholder="ツイートできてえらい代" cols="40" rows="10" v-model.string="message"></textarea></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
